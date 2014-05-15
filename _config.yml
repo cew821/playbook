@@ -1,4 +1,4 @@
-baseurl: /starter
+baseurl: /playbook
 permalink: pretty
 markdown: rdiscount
 prose:
