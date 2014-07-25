@@ -1,0 +1,17 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+body {
+  background: blue;
+  @include outer-container();
+}
+
+#navigation_bar {
+  background: red;
+  color: blue;
+  @include outer-container();
+
+  .title {
+  
+  }
+}
