@@ -4,22 +4,40 @@
   box-sizing: border-box; }
 
 body {
-  background: blue;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  body:after {
-    content: "";
-    display: table;
-    clear: both; }
+  background: #eae4d2; }
+
+ol {
+  list-style-type: decimal; }
 
 #navigation_bar {
   background: red;
-  color: blue;
+  color: blue; }
+
+#introduction {
+  background: #32436e;
+  color: #eeeeee; }
+  #introduction h1 {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 0.25em;
+    margin-bottom: 20px; }
+  #introduction p {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    #introduction p:last-child {
+      margin-right: 0; }
+
+#plays_index {
+  background: #3a96b7;
+  color: black; }
+
+.outer_container {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
-  #navigation_bar:after {
+  margin-right: auto;
+  padding: 40px; }
+  .outer_container:after {
     content: "";
     display: table;
     clear: both; }

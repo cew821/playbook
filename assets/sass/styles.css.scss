@@ -1,17 +1,50 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
+// Colors
+$eagle_blue:          #32436E;
+$marina_blue:         #1164B0;
+$miami_vice_blue:     #3A96B7;
+$teton_white:         #eee;
+$background_white:    #EAE4D2;
+
 body {
-  background: blue;
-  @include outer-container();
+  background: $background_white;
+}
+
+ol {
+  list-style-type: decimal;
 }
 
 #navigation_bar {
   background: red;
   color: blue;
-  @include outer-container();
-
+  // @include outer-container();
   .title {
-  
   }
+}
+
+#introduction {
+  background: $eagle_blue;
+  color: $teton_white;
+  h1 {
+    border-bottom: 1px solid $teton_white;
+    padding-bottom: 0.25em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    @include span-columns(7);
+    // background: red;
+  }
+}
+
+#plays_index {
+  background: $miami_vice_blue;
+  color: black;
+}
+
+.outer_container {
+  @include outer-container();
+  padding: 40px;
 }
