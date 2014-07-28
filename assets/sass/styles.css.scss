@@ -26,7 +26,7 @@ a:hover {
   text-decoration: underline;
 }
 
-ol {
+ol, ul {
   list-style-type: decimal;
   list-style-position: inside;
   li {
@@ -42,15 +42,26 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2 {
+  font-family: $serif;
+  font-size: 54px;
+  font-weight: 300;
+}
+
 h3 {
   font-family: $sans-serif;
   font-size: 18px;
 }
 
-h2 {
+h4 {
   font-family: $serif;
-  font-size: 54px;
-  font-weight: 300;
+  font-size: 18px;
+  color: $miami_vice_blue;
+}
+
+h5 {
+  font-family: $sans-serif;
+  font-size: 14px;
 }
 
 #navigation_bar {
@@ -75,9 +86,15 @@ h2 {
 #plays_index {
   background: $miami_vice_blue;
   color: $black;
-  h3 { color: $white; }
+  h3 { 
+    color: $white;
+    font-size: 22px;
+  }
+  
   ol li {
     color: $white;
+    font-size: 22px;
+    font-weight: 400;
   }
   a {
     color: $black;
@@ -88,8 +105,21 @@ h2 {
   h2, h4 {
     @include span-columns(7);
   }
+  h4 {
+    margin-top: 1em;
+  }
   p, ol, ul {
-    @include span-columns(9);
+    @include span-columns(8);
+  }
+  ol {
+    list-style-type: square;
+  }
+  li {
+    font-size: 14px;
+  }
+  ul {
+    list-style-type: circle;
+    list-style-position: inside;
   }
 }
 

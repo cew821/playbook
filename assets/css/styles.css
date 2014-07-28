@@ -15,10 +15,10 @@ a {
 a:hover {
   text-decoration: underline; }
 
-ol {
+ol, ul {
   list-style-type: decimal;
   list-style-position: inside; }
-  ol li {
+  ol li, ul li {
     margin: 1em 0; }
 
 h1 {
@@ -28,14 +28,23 @@ h1 {
   padding-bottom: 0.25em;
   margin-bottom: 20px; }
 
-h3 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px; }
-
 h2 {
   font-family: "Merriweather", serif;
   font-size: 54px;
   font-weight: 300; }
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px; }
+
+h4 {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  color: #3a96b7; }
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px; }
 
 #navigation_bar {
   background: red;
@@ -58,9 +67,12 @@ h2 {
   background: #3a96b7;
   color: #333333; }
   #plays_index h3 {
-    color: #eeeeee; }
+    color: #eeeeee;
+    font-size: 22px; }
   #plays_index ol li {
-    color: #eeeeee; }
+    color: #eeeeee;
+    font-size: 22px;
+    font-weight: 400; }
   #plays_index a {
     color: #333333; }
 
@@ -71,13 +83,22 @@ h2 {
   width: 57.35098%; }
   #plays h2:last-child, #plays h4:last-child {
     margin-right: 0; }
+#plays h4 {
+  margin-top: 1em; }
 #plays p, #plays ol, #plays ul {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 74.41059%; }
+  width: 65.88078%; }
   #plays p:last-child, #plays ol:last-child, #plays ul:last-child {
     margin-right: 0; }
+#plays ol {
+  list-style-type: square; }
+#plays li {
+  font-size: 14px; }
+#plays ul {
+  list-style-type: circle;
+  list-style-position: inside; }
 
 .outer_container {
   max-width: 68em;
