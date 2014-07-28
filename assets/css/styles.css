@@ -4,10 +4,38 @@
   box-sizing: border-box; }
 
 body {
-  background: #eae4d2; }
+  background: #eae4d2;
+  font-family: "Merriweather", serif; }
+
+a {
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit; }
+
+a:hover {
+  text-decoration: underline; }
 
 ol {
-  list-style-type: decimal; }
+  list-style-type: decimal;
+  list-style-position: inside; }
+  ol li {
+    margin: 1em 0; }
+
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 0.25em;
+  margin-bottom: 20px; }
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px; }
+
+h2 {
+  font-family: "Merriweather", serif;
+  font-size: 54px;
+  font-weight: 300; }
 
 #navigation_bar {
   background: red;
@@ -16,21 +44,40 @@ ol {
 #introduction {
   background: #32436e;
   color: #eeeeee; }
-  #introduction h1 {
-    border-bottom: 1px solid #eeeeee;
-    padding-bottom: 0.25em;
-    margin-bottom: 20px; }
   #introduction p {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 57.35098%; }
+    width: 57.35098%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px; }
     #introduction p:last-child {
       margin-right: 0; }
 
 #plays_index {
   background: #3a96b7;
-  color: black; }
+  color: #333333; }
+  #plays_index h3 {
+    color: #eeeeee; }
+  #plays_index ol li {
+    color: #eeeeee; }
+  #plays_index a {
+    color: #333333; }
+
+#plays h2, #plays h4 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  #plays h2:last-child, #plays h4:last-child {
+    margin-right: 0; }
+#plays p, #plays ol, #plays ul {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  #plays p:last-child, #plays ol:last-child, #plays ul:last-child {
+    margin-right: 0; }
 
 .outer_container {
   max-width: 68em;

@@ -8,6 +8,7 @@ title: 'This is my Site Title'
   <meta charset='UTF-8'/>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700|Open+Sans:300,400' rel='stylesheet' type='text/css'>
   <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
   <link href='{{site.baseurl}}/assets/css/styles.css' rel='stylesheet' />
 </head>
@@ -33,7 +34,14 @@ title: 'This is my Site Title'
     {{ plays_index | markdownify }}
   </div>
 </div>
-  
+
+<div id="plays">
+  <div class="outer_container" id="play1">
+    {% capture play1 %}{% include play1.md %}{% endcapture %}
+    {{ play1 | markdownify }}
+  </div>
+</div>
+  <!-- 
   <div class='container'>
     <div class='col12 clearfix'>
       <div class='header col6 margin3 pad4h'>
@@ -48,6 +56,6 @@ title: 'This is my Site Title'
       </div>
     </div>
     {{content}}
-  </div>
+  </div> -->
   <script src='{{site.baseurl}}/site.js'></script>
 </body>

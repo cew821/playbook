@@ -2,18 +2,55 @@
 @import "neat/neat";
 
 // Colors
-$eagle_blue:          #32436E;
-$marina_blue:         #1164B0;
+$atlantic_blue:       #32436E;
+$pacific_blue:        #1164B0;
 $miami_vice_blue:     #3A96B7;
-$teton_white:         #eee;
+$white:               #eee;
+$black:               #333;
+$gray:                #4D4D4D;
 $background_white:    #EAE4D2;
+$serif:               'Merriweather', serif;
+$sans-serif:          'Open Sans', sans-serif;
 
 body {
   background: $background_white;
+  font-family: $serif;
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 ol {
   list-style-type: decimal;
+  list-style-position: inside;
+  li {
+    margin: 1em 0;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+  border-bottom: 1px solid $white;
+  padding-bottom: 0.25em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: $sans-serif;
+  font-size: 18px;
+}
+
+h2 {
+  font-family: $serif;
+  font-size: 54px;
+  font-weight: 300;
 }
 
 #navigation_bar {
@@ -25,23 +62,35 @@ ol {
 }
 
 #introduction {
-  background: $eagle_blue;
-  color: $teton_white;
-  h1 {
-    border-bottom: 1px solid $teton_white;
-    padding-bottom: 0.25em;
-    margin-bottom: 20px;
-  }
+  background: $atlantic_blue;
+  color: $white;
 
   p {
     @include span-columns(7);
-    // background: red;
+    font-family: $sans-serif;
+    font-size: 18px;
   }
 }
 
 #plays_index {
   background: $miami_vice_blue;
-  color: black;
+  color: $black;
+  h3 { color: $white; }
+  ol li {
+    color: $white;
+  }
+  a {
+    color: $black;
+  }
+}
+
+#plays {
+  h2, h4 {
+    @include span-columns(7);
+  }
+  p, ol, ul {
+    @include span-columns(9);
+  }
 }
 
 .outer_container {
